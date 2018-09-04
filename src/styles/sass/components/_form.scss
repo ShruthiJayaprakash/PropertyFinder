@@ -1,0 +1,51 @@
+@import '../utils/variables';
+
+%border {
+    border: 1px solid $grey;
+}
+
+.login-form-container{
+    @extend %border;
+    border-radius: 8px;
+    padding: 50px;
+    margin-left:40%;
+    //max-width:100%;
+    width:300px;
+
+    // input:invalid {
+    //     border: 1px dashed rgb(38, 167, 21);
+    // }   
+
+    .form-control {
+        max-width: 100%;
+        width: 180px;
+    }
+
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .login-form-container .btn {
+       width: 100%;
+    }
+}
+
+
+.container-wrapper{
+    height:350px;
+    width:400px;
+    display:flex;
+    border:1px solid black;
+    margin:20px auto;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    padding:10px;
+    .component-wrapper{
+        padding:20px;
+        .search-section{
+            margin:15px auto;
+        }
+    }
+
+}
