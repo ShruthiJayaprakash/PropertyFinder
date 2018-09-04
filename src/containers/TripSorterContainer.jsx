@@ -1,5 +1,6 @@
 import React from 'react';
-import TripSorterSearchComponent from '../components/TripSorterSearchComponent';
+// import TripSorterSearchComponent from '../components/TripSorterSearchComponent';
+import TripSorterResultComponent from '../components/TripSorterResultComponent';
 
 class TripSorterContainer extends React.Component {
     // constructor(props) {
@@ -9,7 +10,8 @@ class TripSorterContainer extends React.Component {
         return (
             <div className="container-wrapper">
                 <h1>Trip Sorter</h1>
-                <TripSorterSearchComponent />
+                {/* <TripSorterSearchComponent /> */}
+                <TripSorterResultComponent />
             </div>
         );
     }
