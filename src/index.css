@@ -1,34 +1,50 @@
 .login-form-container {
-  border: 1px solid #ccc; }
+    border: 1px solid #ccc;
+}
 
 .login-form-container {
-  border-radius: 8px;
-  padding: 50px;
-  margin-left: 40%;
-  width: 300px; }
-  .login-form-container .form-control {
+    border-radius: 8px;
+    padding: 50px;
+    margin-left: 40%;
+    width: 300px;
+}
+
+.login-form-container .form-control {
     max-width: 100%;
-    width: 180px; }
+    width: 180px;
+}
 
 /* Change styles for cancel button and signup button on extra small screens */
+
 @media screen and (max-width: 300px) {
-  .login-form-container .btn {
-    width: 100%; } }
+    .login-form-container .btn {
+        width: 100%;
+    }
+}
 
 .container-wrapper {
-  width: 400px;
-  display: flex;
-  border: 1px solid black;
-  margin: 20px auto;
-  align-content: center;
-  justify-content: flex-start;
-  flex-direction: column;
-  padding: 10px; }
-  .container-wrapper .component-wrapper {
-    padding: 20px; }
-    .container-wrapper .component-wrapper .container-header {
-      margin-top: 10px; }
-    .container-wrapper .component-wrapper .component-section {
-      background: #ccc; }
-    .container-wrapper .component-wrapper .search-section {
-      margin: 15px auto; }
+    width: 400px;
+    display: flex;
+    border: 1px solid black;
+    margin: 20px auto;
+    align-content: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.container-wrapper .component-wrapper {
+    padding: 20px;
+}
+
+.container-wrapper .component-wrapper .container-header {
+    margin-top: 10px;
+}
+
+.container-wrapper .component-wrapper .component-section {
+    background: #ccc;
+}
+
+.container-wrapper .component-wrapper .search-section {
+    margin: 15px auto;
+}

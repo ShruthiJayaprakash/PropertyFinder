@@ -31,32 +31,5 @@ export function fetchTripSorterData() {
         }
     } else {
         //real api call
-        // return dispatch => {
-        //    dispatch(requestAdminExchangeRate())
-        //     return fetch(GET_ADMIN_EXCHANGE_RATE_URL, { 
-        //     method:'get', 
-        //     headers : {
-        //       "ClientType": "RangeUI",
-        //       "Authorization": "Bearer " + localStorage.token} 
-        //     })
-        //     .then(checkHttpStatus)
-        //     .then(response => response.json())
-        //     .then(json => {
-        //     try {
-        //        return dispatch(recieveAdminExchangeRate(json))
-        //     } catch (e) {
-        //       dispatch(loginUserFailure({
-        //         response: {
-        //             status: 403,
-        //             statusText: 'Session expired!!! please login again'
-        //         }
-        //       }));   
-        //     }
-        //   }).catch(error => {
-        //     if(error.response.status === 401){
-        //       dispatch(loginUserFailure(error));
-        //      }     
-        //   })
-        // }
     }
 }
