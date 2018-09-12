@@ -32,17 +32,23 @@
 
 
 .container-wrapper{
-    height:350px;
+    //height:350px;
     width:400px;
     display:flex;
     border:1px solid black;
     margin:20px auto;
     align-content: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
     padding:10px;
     .component-wrapper{
         padding:20px;
+        .container-header{
+            margin-top: 10px;
+        }
+        .component-section{
+            background: $grey;
+        }
         .search-section{
             margin:15px auto;
         }

@@ -2,7 +2,8 @@ import * as types from '../constants/ActionTypes';
 
 const defaultState ={
     uniqueCities:[],
-    cheapestCities:{}
+    cheapestCities:{},
+    fastestCities:{}
 }
 
 export default function tripSorter(state={defaultState},action){
@@ -11,7 +12,8 @@ export default function tripSorter(state={defaultState},action){
         case types.RECEIVE_TRIP_SORTER_DATA:   
         return {
             uniqueCities: action.uniqueCities,
-            cheapestCities: action.cheapestCities
+            cheapestCities: action.cheapestCities,
+            fastestCities: action.fastestCities
         }
         default:
             return state;

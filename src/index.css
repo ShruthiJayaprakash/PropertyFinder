@@ -16,16 +16,19 @@
     width: 100%; } }
 
 .container-wrapper {
-  height: 350px;
   width: 400px;
   display: flex;
   border: 1px solid black;
   margin: 20px auto;
   align-content: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   padding: 10px; }
   .container-wrapper .component-wrapper {
     padding: 20px; }
+    .container-wrapper .component-wrapper .container-header {
+      margin-top: 10px; }
+    .container-wrapper .component-wrapper .component-section {
+      background: #ccc; }
     .container-wrapper .component-wrapper .search-section {
       margin: 15px auto; }
