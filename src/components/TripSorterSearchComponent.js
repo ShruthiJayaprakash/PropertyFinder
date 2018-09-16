@@ -19,10 +19,6 @@ class TripSorterSearchComponent extends React.Component {
     }
 
     handleSearch() {
-        console.log("travelFrom :" + this.state.travelFrom)
-        console.log("travelTo :" + this.state.travelTo)
-        console.log("cheapest :" + this.state.cheapest)
-        console.log("fastest :" + this.state.fastest)
         this.props.onSearch(this.state.travelFrom, this.state.travelTo, this.state.cheapest, this.state.fastest)
     }
 
@@ -33,10 +29,8 @@ class TripSorterSearchComponent extends React.Component {
     }
 
     render() {
-        console.log("cities :" + JSON.stringify(this.props.cities))
         return (
             <section className="component-wrapper">
-                {/* <label htmlFor="pet-select">Choose a pet:</label> */}
                 <div className="form-group">
                     <select id="travelFrom" className="form-control" onChange={this.handleTravel}>
                         <option value="">--From--</option>

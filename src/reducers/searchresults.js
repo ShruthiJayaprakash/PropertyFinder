@@ -5,7 +5,6 @@ const defaultState ={
 }
 
 export default function setSearchResults(state={defaultState},action){
-    console.log(action);
     switch(action.type){
         case types.SET_SEARCH_RESULTS:   
         return {

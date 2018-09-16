@@ -2,9 +2,7 @@ import React from 'react';
 
 class TripSorterResultComponent extends React.Component {
     render() {
-        console.log("res : : :" + JSON.stringify(this.props.res))
         var res = this.props.res == undefined ? [] : this.props.res.detailedPath
-        console.log("res :" + JSON.stringify(res))
         let totalCost = this.props.res && this.props.res.distance
         let totalDuartion = this.props.res && this.props.res.duration
         return (
@@ -14,13 +12,13 @@ class TripSorterResultComponent extends React.Component {
                     {
                         res.map(items => {
                             return (<section className="component-section">
-                                <p > {`${items.departure}    >   ${items.arrival}    ${items.cost}$`} </p>
+                                <p > {`${items.departure}    >   ${items.arrival}    ${items.cost}€`} </p>
                                 <p> {`${items.transport}   ${items.reference}  for  ${items.duration}`}  </p>
                             </section>)
                         })
                     }
                     <section className="component-section">
-                        <p > {`Total :   Cost: ${totalCost}   Duartion: ${totalDuartion}`} </p>
+                        <p > {`Total :   Cost: ${totalCost}€   Duartion: ${totalDuartion}`} </p>
                     </section>
                 </div>
                 <div className="reset-section">

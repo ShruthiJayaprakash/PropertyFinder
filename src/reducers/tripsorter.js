@@ -7,7 +7,6 @@ const defaultState ={
 }
 
 export default function tripSorter(state={defaultState},action){
-    console.log(JSON.stringify(action.uniqueCities));
     switch(action.type){
         case types.RECEIVE_TRIP_SORTER_DATA:   
         return {

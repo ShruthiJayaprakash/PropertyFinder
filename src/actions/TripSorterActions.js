@@ -11,8 +11,6 @@ export function requestTripSorterData() {
 }
 
 export function recieveTripSorterData(json) {
-    // console.log("json :"+JSON.stringify(json))
-    
     return {
         type: types.RECEIVE_TRIP_SORTER_DATA,
         uniqueCities: getUniqueCities(json.deals),
